@@ -1,6 +1,7 @@
 package com.abs.emergencyapp
 
 import android.os.Bundle
+import androidx.activity.addCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -43,7 +44,14 @@ class MainActivity : AppCompatActivity() {
         val adapter = EmergencyAdapter(this,emergencies)
         emergencyRV.adapter=adapter
 
+
+        onBackPressedDispatcher.addCallback {
+            val exit = ExitDialog()
+            exit.isCancelable = false
+            exit.show(supportFragmentManager,null)
+        }
+
     }
-
-
 }
+
+
