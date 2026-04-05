@@ -17,6 +17,24 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val emergencies =listOf(
+            //ctrl + p
+            Emergency(
+                R.drawable.fire,
+                "Fire Truck",
+                "180",
+            ),
+            Emergency(
+                R.drawable.child_care,
+                "Child Rescue",
+                "16000",
+            ),
+            Emergency(
+                R.drawable.police,
+                "Police",
+                "122",
+            )
+        )
 
     }
 }
