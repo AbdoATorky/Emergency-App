@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = EmergencyAdapter(this,emergencies)
         emergencyRV.adapter=adapter
 
-
-
     }
+
+
 }
