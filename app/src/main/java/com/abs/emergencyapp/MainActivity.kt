@@ -23,17 +23,17 @@ class MainActivity : AppCompatActivity() {
             //ctrl + p
             Emergency(
                 R.drawable.fire,
-                "Fire Truck",
+                getString(R.string.fire),
                 "180",
             ),
             Emergency(
                 R.drawable.child_care,
-                "Child Rescue",
+                getString(R.string.child),
                 "16000",
             ),
             Emergency(
                 R.drawable.police,
-                "Police",
+                getString(R.string.police),
                 "122",
             )
         )
